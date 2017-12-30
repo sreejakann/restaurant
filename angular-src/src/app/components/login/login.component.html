@@ -1,0 +1,15 @@
+<div style="text-align:center">
+  <div *ngIf='errorFlag'>
+    <p>ERROR! Please check your details</p>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <label for="userName">username: <input type= "text" id="userName" [(ngModel)]= "username" placeholder="username"></label><br/>
+        <label for="password">password: <input type= "password" id="password" [(ngModel)]= "password" placeholder="password"></label><br/><br/>
+        <button class="login" (click)="loginClicked()">Login</button>
+        <button class="signup" (click)="signupClicked()">Signup</button>
+      </div>
+    </div>
+  </div>
+</div>
