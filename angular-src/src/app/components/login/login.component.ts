@@ -20,10 +20,15 @@ export class LoginComponent implements OnInit{
 	}
   loginClicked() {
     if (this.username && this.username.trim() !== '' && this.password && this.password.trim() !== ''){
+			if(this.username == 'admin' && this.password == 'admin'){
+				this.username = '';
+				this.password = '';
+				this.errorFlag = false;
+				this.router.navigate(['user']);
+			}
 			this.username = '';
 			this.password = '';
 			this.errorFlag = false;
-			this.router.navigate(['user']);
     }else {
       this.errorFlag = true;
     }
