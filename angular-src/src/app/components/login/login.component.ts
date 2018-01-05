@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { SignupComponent } from '../signup/signup.component';
 
 @Component({
   selector: 'app-login',
@@ -34,9 +35,9 @@ export class LoginComponent implements OnInit{
     }
 	}
 	
-	signupClicked(){
-		this.username = '';
-		this.password = '';
+	singup():void{
 		this.router.navigate(['signup']);
 	}
+
+
 }

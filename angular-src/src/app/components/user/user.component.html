@@ -10,13 +10,3 @@
 		</label>
   </div>
 </div>
-
-<mat-form-field>
-  <mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">
-    <mat-option *ngFor="let user of usertypes" [value]="user">
-      {{user}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
-
-<p> Selected value: {{selectedValue}} </p>

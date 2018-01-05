@@ -3,7 +3,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import {MatButtonModule, MatInputModule, MatSelectModule, MatOptionModule, MatCheckboxModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -21,17 +20,11 @@ const appRoutes : Routes = [
     AppComponent,
     LoginComponent,
     UserComponent,
-    SignupComponent
+		SignupComponent
   ],
   imports: [
 		BrowserModule,
-		BrowserAnimationsModule,
-		FormsModule,
-		MatInputModule,
-		MatButtonModule,
-		MatSelectModule,
-		MatOptionModule,
-		MatCheckboxModule,
+		FormsModule,	
 		RouterModule.forRoot(appRoutes)
   ],
   providers: [],

@@ -2,14 +2,9 @@
   <div *ngIf='errorFlag'>
     <p>ERROR! Please check your details</p>
   </div>
-  <form class="example-form">
-    <mat-form-field>
-      <input matInput placeholder="username" type="text" class="userName" [(ngModel)]="username">
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput placeholder="password" type="password" class="password" [(ngModel)]="password">
-    </mat-form-field>
-  </form>
-  <button mat-button class="login" (click)="loginClicked()">Login</button>
-  <button mat-button class="signup" (click)="signupClicked()">Signup</button>
+  <input matInput placeholder="username" type="text" class="userName" [(ngModel)]="username">
+  <input matInput placeholder="password" type="password" class="password" [(ngModel)]="password">
+
+  <button class="btn btn-sm btn-outline-primary login " (click)="loginClicked()">Login</button>
+  <button class="btn btn-sm btn-outline-primary signup" (click)="singup()">Signup</button>
 </div>
